@@ -1,6 +1,7 @@
 ##Guru99 Task - Share a github link for this
 ####You need to create new feature file new step definition and also implement page object model for that homework.
 Feature:Add Tariff Plan
+  @TC_1
 Scenario:VerifyAdd Tariff Plan website http://demo.guru99.com/telecom/index.html
 Given The user wants to see Guru demo site
 When The user wants to Add Tariff Plan

@@ -10,10 +10,9 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
-
 public class BrowserUtils {
     //We created browser utils to store useful methods to help with writing more understandable code
-//we will only be using some of them the rest will be for reference
+    //we will only be using some of them the rest will be for reference
     public static void staticWait(int second){
         try {
             Thread.sleep(1000 * second);
@@ -174,4 +173,3 @@ public class BrowserUtils {
         System.out.println("Entering text: " + text);
     }
 }
-

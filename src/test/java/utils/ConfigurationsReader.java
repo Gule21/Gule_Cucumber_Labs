@@ -9,7 +9,7 @@ public class ConfigurationsReader {
     private static Properties configFile;
     static {
         try {
-            FileInputStream fileInputStream = new FileInputStream("Configuration.properties");
+            FileInputStream fileInputStream = new FileInputStream("configuration.properties");
             configFile = new Properties();
             configFile.load(fileInputStream);
             fileInputStream.close();
@@ -21,7 +21,4 @@ public class ConfigurationsReader {
     public static String getProperties(String key){
         return configFile.getProperty(key);
     }
-
-
-
 }

@@ -8,7 +8,7 @@ import org.openqa.selenium.TakesScreenshot;
 import utils.BrowserUtils;
 import utils.Driver;
 
-public class Hooks {
+public class Hooks extends BrowserUtils {
     @Before
     public void setup(){
         Driver.getDriver();
@@ -21,8 +21,9 @@ public class Hooks {
             byte[] data=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(data, "image/png", scenario.getName());
         }
+
         Driver.closeDriver();
 
-    }
 
+    }
 }
